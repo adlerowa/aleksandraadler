@@ -8,4 +8,4 @@ title: Welcome
 I am a postdoctoral researcher in cognitive science of language at Stockholm University.
 Welcome to my personal website.
 
-![My Photo](https://github.com/adlerowa/aleksandraadler/edit/main/adler_tolk.jpg)
+![My Photo](adler_tolk.jpg)
