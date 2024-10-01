@@ -3,6 +3,7 @@ layout: home
 title: Welcome
 ---
 
-# Welcome to My Personal Website
+# Hi! I'm Aleksandra Adler
 
-This is the home page of my personal website.
+I am a postdoctoral researcher in cognitive science of language at Stockholm University.
+Welcome to my personal website.
