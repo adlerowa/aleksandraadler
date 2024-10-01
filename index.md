@@ -8,4 +8,4 @@ title: Welcome
 I am a postdoctoral researcher in cognitive science of language at Stockholm University.
 Welcome to my personal website.
 
-![My Photo](adler_tolk.jpg)
+<img src="adler_tolk.jpg" alt="My Photo" width="300" height="400">
