@@ -13,7 +13,7 @@ Welcome to my personal website.
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; /* Adjust as needed */
+    width: 25%; /* Adjust as needed */
   }
 </style>
 
