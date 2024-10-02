@@ -9,6 +9,6 @@ I am a postdoctoral researcher in cognitive science of language at Stockholm Uni
 Welcome to my personal website.
 
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <img src="adler_tolk.jpg" alt="My Photo" width="300" height="400">
 </div>
