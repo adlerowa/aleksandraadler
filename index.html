@@ -19,6 +19,13 @@
       padding: 2rem;
       text-align: center;
     }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
     header h1 {
       margin-bottom: 0.25rem;
     }
@@ -39,6 +46,10 @@
       margin: 0 1rem;
       font-weight: bold;
     }
+    nav a:focus {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
     section {
       max-width: 800px;
       margin: 2rem auto;
@@ -47,6 +58,18 @@
     h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.25rem;
+    }
+    .download-cv {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .download-cv a {
+      background-color: #0073b1;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -64,15 +87,29 @@
       margin: 0.25rem 0;
       color: #0073b1;
     }
+    @media (max-width: 600px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      section {
+        padding: 0 0.5rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
+  <header role="banner">
+    <img src="adler_tolk.jpg" alt="Profile photo of Aleksandra Adler" />
     <h1>Aleksandra Adler</h1>
-    <p>Cognitive Neuroscientist | Linguist | Educator</p>
+    <p>Interpreter | Neuroinguist | Educator</p>
   </header>
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
     <a href="#bio">About</a>
     <a href="#research">Research</a>
     <a href="#teaching">Teaching</a>
@@ -80,37 +117,44 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="bio">
-    <h2>About</h2>
-    <p>I am a postdoctoral researcher at Stockholm University Brain Imaging Centre, working at the intersection of bilingualism, cognitive control, and neuroimaging. I combine behavioral and fMRI methods to understand language switching in interpreters and bilinguals.</p>
-  </section>
+  <main>
+    <section id="bio">
+      <h2>About</h2>
+      <p>I am a postdoctoral researcher at Stockholm University Brain Imaging Centre, working at the intersection of bilingualism, cognitive control, and neuroimaging. I combine behavioral and fMRI methods to understand language switching in interpreters and bilinguals.</p>
+    </section>
 
-  <section id="research">
-    <h2>Research</h2>
-    <p>My work focuses on bilingual language processing, cognitive effort, and dialogue interpreting. I currently lead a funded research project on language switching and control mechanisms in professional interpreters.</p>
-  </section>
+    <section id="research">
+      <h2>Research</h2>
+      <p>My work focuses on bilingual language processing, cognitive effort, and dialogue interpreting. I currently lead a funded research project on language switching and control mechanisms in professional interpreters.</p>
+    </section>
 
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <p>I have taught courses on interpreting, translation, cognitive neuroscience, and research methods. I also supervised theses and co-led curriculum development for graduate and undergraduate programs.</p>
-  </section>
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>I have taught courses on interpreting, translation, cognitive neuroscience, and research methods. I also supervised theses and co-led curriculum development for graduate and undergraduate programs.</p>
+    </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>Adler, A. (2024). Pupillometry and cognitive effort in interpreting. <em>Journal of Cognitive Neuroscience.</em></li>
-      <li>Adler, A. (2023). Switching languages: A Stroop fMRI study. <em>Bilingualism: Language and Cognition.</em></li>
-    </ul>
-  </section>
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li>Adler, A. (2024). Pupillometry and cognitive effort in interpreting. <em>Journal of Cognitive Neuroscience.</em></li>
+        <li>Adler, A. (2023). Switching languages: A Stroop fMRI study. <em>Bilingualism: Language and Cognition.</em></li>
+        <li>Adler, A. (2022). Cognitive control in interpreting: A behavioral approach. <em>Neuropsychologia.</em></li>
+      </ul>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i><a href="mailto:adleralek@gmail.com">adleralek@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/aleksandraadler">linkedin.com/in/aleksandraadler</a></p>
-    <p><i class="fab fa-github"></i><a href="https://github.com/adlerowa">github.com/adlerowa</a></p>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i><a href="mailto:adleralek@gmail.com">adleralek@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/aleksandraadler">linkedin.com/in/aleksandraadler</a></p>
+      <p><i class="fab fa-github"></i><a href="https://github.com/adlerowa">github.com/adlerowa</a></p>
+    </section>
 
-  <footer>
+    <section class="download-cv">
+      <a href="cv_adler.pdf" download aria-label="Download Aleksandra Adler's CV in PDF format">Download CV (PDF)</a>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
     &copy; 2025 Aleksandra Adler
   </footer>
 </body>
