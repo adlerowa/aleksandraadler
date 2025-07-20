@@ -99,7 +99,13 @@
       section {
         padding: 0 0.5rem;
       }
-    }
+    .visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
   </style>
 </head>
 <body>
@@ -159,9 +165,13 @@
       <p><i class="fab fa-github"></i><a href="https://github.com/adlerowa">github.com/adlerowa</a></p>
     </section>
 
-    <section class="download-cv">
-      <a href="cv_adler_a.pdf" download aria-label="Download Aleksandra Adler's CV in PDF format">Download CV (PDF)</a>
-    </section>
+    <<section class="download-cv">
+  <a href="cv_adler.pdf" download aria-label="Download Aleksandra Adler's CV in PDF format (opens in a new tab)" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV (PDF)
+  </a>
+  <p class="visually-hidden">Note: This link opens a PDF file. If you experience issues accessing it, please contact me for an alternative format.</p>
+</section>
+
   </main>
 
   <footer role="contentinfo">
