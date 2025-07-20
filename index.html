@@ -103,14 +103,25 @@
       section {
         padding: 0 0.5rem;
       }
-    }
+    .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+}
   </style>
 </head>
 <body>
   <header role="banner">
     <img src="adler_tolk.jpg" alt="Profile photo of Aleksandra Adler" />
     <h1>Aleksandra Adler</h1>
-    <p>Interpreter | Neuroinguist | Educator</p>
+    <p>Interpreter | Neurolinguist | Educator</p>
   </header>
 
   <nav role="navigation" aria-label="Main navigation">
@@ -133,10 +144,85 @@
       <p>My work focuses on bilingual language processing, cognitive effort, and dialogue interpreting. I currently lead a funded research project on language switching and control mechanisms in professional interpreters.</p>
     </section>
 
-    <!-- other sections remain unchanged -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>I have taught at both undergraduate and advanced levels, primarily within interpreter education and translation studies. My teaching experience includes lectures, seminars, supervision, course coordination, and examination. I am comfortable teaching in both classroom and distance learning formats and have created complete course environments in Athena (Stockholm University’s learning management system). I frequently use case-based learning to help students connect theoretical content to real-world interpreting situations and to foster interactional competence.</p>
+      <ul>
+        <li>2019: Professional ethics and dialogue interpreting for conference interpreters, graduate course, 7.5 ECTS</li>
+        <li>2021: Professional ethics and professional knowledge II, 7.5 ECTS, lecturer and seminar leader</li>
+        <li>2021: Internship in interpreting, 7.5 ECTS, teacher and course coordinator</li>
+        <li>2022–2024: Professional ethics and professional knowledge I, 7.5 ECTS</li>
+        <li>2023–2024: Language for specific purposes, terminology and lexicography, part of pedagogy for interpreter educators</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <h3>Monographs</h3>
+      <p>Adler, A. (2023). <em>Cognitive load in dialogue interpreting</em>. PhD dissertation, Stockholm University.</p>
+
+      <h3>Peer-reviewed articles</h3>
+      <p>Adler, A. (2024). Effects of experience and directionality on cognitive load in dialogue interpreting. <em>Translation, Cognition & Behavior</em>, 7(2), 187–208. <a href="https://doi.org/10.1075/tcb.24005.adl">https://doi.org/10.1075/tcb.24005.adl</a></p>
+
+      <h3>Manuscripts and other articles</h3>
+      <ul>
+        <li>Adler, A. (2025). The interpreting brain. Preregistration on OSF. <a href="https://doi.org/10.17605/OSF.IO/WYUC3">https://doi.org/10.17605/OSF.IO/WYUC3</a></li>
+        <li>Adler, A. Situated learning portfolio. Manuscript submitted to <em>The Interpreter and Translator Trainer</em>.</li>
+        <li>Tiselius, E., & Adler, A. Pupillometry in dialogue interpreting. (Co-designer, methods lead, analyst.)</li>
+        <li>Thomsen, T., & Adler, A. (2025). The impact of language environment. Manuscript submitted to <em>Translation and Interpreting Studies</em>.</li>
+      </ul>
+    </section>
+
+    <section id="grants">
+      <h2>Grants, Awards & Talks</h2>
+      <h3>Research Grants</h3>
+      <ul>
+        <li>2025–2026: Postdoc grant, Anna Ahlströms och Ellen Terserus stiftelse</li>
+        <li>2024: SUBIC Time Grant (24h scanner time)</li>
+        <li>2017–2023: Doctoral researcher on VR project Invisible Process (PI: Tiselius)</li>
+      </ul>
+
+      <h3>Awards</h3>
+      <p>2021: Best Poster Award – ICTIC Conference</p>
+
+      <h3>Memberships</h3>
+      <ul>
+        <li>Society for the Neurobiology of Language (2022–)</li>
+        <li>SPRINT Research Group (2020–)</li>
+      </ul>
+
+      <h3>Referee Assignments</h3>
+      <ul>
+        <li>Reviewer, AMLAP Conference (2023–)</li>
+        <li>Editorial team, TransActions journal (2022–2023)</li>
+        <li>Ad hoc reviewer, Humanities and Social Sciences Communications (2022–)</li>
+      </ul>
+
+      <h3>Invited Talks</h3>
+      <ul>
+  <li>2024: <em>Do we really need another interpreting model?</em> Nordic Seminar for Interpreter Teachers, Stockholm University</li>
+  <li>2023: <em>Don’t blink! Exploring methodological approaches to cognitive load assessment in dialogue interpreting</em>, International Symposium on Bilingualism, Sydney, Australia</li>
+  <li>2022: <em>Cognitive load and disfluency markers in dialogue interpreting</em>, 10th EST Congress, Oslo, Norway</li>
+  <li>2022: <em>Profiling the processing span: working memory and cognitive load</em> (with E. Tiselius), BTS Symposium, Stockholm</li>
+  <li>2022: <em>Panel: Investigating the processes of translating and interpreting</em>, ASLA, Stockholm</li>
+  <li>2019: <em>Cognitive performance and disfluency in community interpreting</em>, Critical Link, Tokyo, Japan</li>
+      </ul>
+
+<h3>Poster Presentations</h3>
+<ul>
+  <li>2024: <em>Is cognitive load dependent on the, uh, interpreting direction?</em> (with T. Thomsen), BTS 3 Symposium, Italy</li>
+  <li>2023: <em>Don’t blink! Exploring methods of cognitive load assessment in dialogue interpreting</em>, BTS 2 Symposium, Spain</li>
+  <li>2021: <em>Cognitive load and disfluency in dialogue interpreting</em>, ICTIC3, Forli, Italy</li>
+  <li>2019: <em>Cognitive load and disfluency in dialogue interpreting</em>, 9th EST Congress, Stellenbosch, South Africa</li>
+</ul>
+
+    </section>
 
     <section class="download-cv">
-      <a href="cv_adler_a.pdf" download aria-label="Download Aleksandra Adler's CV. Opens a PDF file.">Download CV</a>
+      <a href="cv_adler_a.pdf" download aria-label="Download Aleksandra Adler's CV in PDF format (opens in a new tab)" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV
+      </a>
+      <p class="visually-hidden">Note: This link opens a PDF file. If you experience issues accessing it, please contact me for an alternative format.</p>
     </section>
   </main>
 
