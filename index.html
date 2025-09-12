@@ -1,29 +1,308 @@
-<section id="skills">
-  <h2>Skills</h2>
-  <table class="skills-table">
-    <tr>
-      <th>Category</th>
-      <th>Details</th>
-    </tr>
-    <tr>
-      <td><strong>Technical</strong></td>
-      <td>Python, R, Git, SPM, FreeSurfer, FieldTrip, FSL</td>
-    </tr>
-    <tr>
-      <td><strong>Analytics</strong></td>
-      <td>Statistical modeling, machine learning</td>
-    </tr>
-    <tr>
-      <td><strong>Research</strong></td>
-      <td>Experimental design, pupillometry, fMRI, mixed-methods</td>
-    </tr>
-    <tr>
-      <td><strong>Collaboration</strong></td>
-      <td>Strong communicator, mentoring, supervision, cross-functional teamwork</td>
-    </tr>
-    <tr>
-      <td><strong>Languages</strong></td>
-      <td>English (fluent), Swedish (fluent), Polish (native), Hebrew (fluent), Spanish (intermediate)</td>
-    </tr>
-  </table>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aleksandra Adler – Academic Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 180px;
+      aspect-ratio: 1 / 1;  /* ensures square */
+      border-radius: 50%;   /* perfect circle */
+      object-fit: cover;    /* crops without distortion */
+      display: block;
+      margin: 0 auto 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+
+    header h1 {
+      margin-bottom: 0.25rem;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:focus {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+
+    main {
+      display: block;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.25rem;
+    }
+
+    /* Skills table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .skills-table th,
+    .skills-table td {
+      text-align: left;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    .skills-table th {
+      background-color: #f5f5f5;
+      width: 25%;
+    }
+
+    .download-cv {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .download-cv a {
+      background-color: #0073b1;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .download-cv a::after {
+      content: " (PDF)";
+      font-weight: normal;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #f0f0f0;
+      color: #666;
+    }
+
+    .contact i {
+      margin-right: 0.5rem;
+      color: #0073b1;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.25rem 0;
+      color: #0073b1;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      section {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <img src="adler_tolk.jpg" alt="Profile photo of Aleksandra Adler" />
+    <h1>Aleksandra Adler</h1>
+    <p></p>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#bio">About</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#publications">Publications</a>
+    <a href="#grants">Grants & Talks</a>
+    <a href="#skills">Skills</a>
+    <a href="mailto:adleralek@gmail.com">Contact</a>
+  </nav>
+
+  <main>
+    <section id="bio">
+      <h2>About</h2>
+      <p>
+        Currently, I am a postdoctoral researcher at
+        <a href="https://www.su.se/subic-stockholm-university-brain-imaging-centre/">
+          Stockholm University Brain Imaging Centre
+        </a>.
+        In my work I combine behavioral and neuroimaging methods to understand language processing in interpreters and bilinguals.
+      </p>
+      <p>
+        I obtained my PhD from Stockholm University, where I worked at
+        <a href="https://www.su.se/institute-for-interpreting-and-translation-studies/">
+          The Institute for Interpreting and Translation
+        </a>
+        under supervision of Elisabet Tiselius, Birgitta Englund Dimitrova, and Christopher Mellinger.
+        My dissertation focused on how interpreters' professional experience and direction of the interpretation influence interpreters' cognitive load.
+      </p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>
+        I have taught at both undergraduate and advanced levels, primarily within interpreter education and translation studies.
+        My teaching experience includes lectures, seminars, supervision, course coordination, and examination.
+        I am comfortable teaching in both classroom and distance learning formats and have created complete course environments in Athena (Stockholm University’s learning management system).
+        I frequently use case-based learning to help students connect theoretical content to real-world interpreting situations and to foster interactional competence.
+      </p>
+      <ul>
+        <li>2019: Professional ethics and dialogue interpreting for conference interpreters, graduate course, 7.5 ECTS</li>
+        <li>2021: Professional ethics and professional knowledge II, 7.5 ECTS, lecturer and seminar leader</li>
+        <li>2021: Internship in interpreting, 7.5 ECTS, teacher and course coordinator</li>
+        <li>2022–2024: Professional ethics and professional knowledge I, 7.5 ECTS</li>
+        <li>2023–2024: Language for specific purposes, terminology and lexicography, part of pedagogy for interpreter educators</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <h3>Monographs</h3>
+      <p>Adler, A. (2023). <em>Cognitive load in dialogue interpreting</em>. PhD dissertation, Stockholm University.</p>
+
+      <h3>Peer-reviewed articles</h3>
+      <p>
+        Adler, A. (2024). Effects of experience and directionality on cognitive load in dialogue interpreting.
+        <em>Translation, Cognition & Behavior</em>, 7(2), 187–208.
+        <a href="https://doi.org/10.1075/tcb.24005.adl">https://doi.org/10.1075/tcb.24005.adl</a>
+      </p>
+
+      <h3>Manuscripts and other articles</h3>
+      <ul>
+        <li>Adler, A. (2025). The interpreting brain. Preregistration on OSF. <a href="https://doi.org/10.17605/OSF.IO/WYUC3">https://doi.org/10.17605/OSF.IO/WYUC3</a></li>
+        <li>Adler, A. Situated learning portfolio. Manuscript submitted to <em>The Interpreter and Translator Trainer</em>.</li>
+        <li>Tiselius, E., & Adler, A. Pupillometry in dialogue interpreting. (Co-designer, methods lead, analyst.)</li>
+        <li>Thomsen, T., & Adler, A. (2025). The impact of language environment. Manuscript submitted to <em>Translation and Interpreting Studies</em>.</li>
+      </ul>
+    </section>
+
+    <section id="grants">
+      <h2>Grants, Awards & Talks</h2>
+      <h3>Research Grants</h3>
+      <ul>
+        <li>2025–2026: Postdoc grant, Anna Ahlströms och Ellen Terserus stiftelse</li>
+        <li>2024: SUBIC Time Grant (24h scanner time)</li>
+        <li>2017–2023: Doctoral researcher on VR project Invisible Process (PI: Tiselius)</li>
+      </ul>
+
+      <h3>Awards</h3>
+      <p>2021: Best Poster Award – ICTIC Conference</p>
+
+      <h3>Memberships</h3>
+      <ul>
+        <li>Society for the Neurobiology of Language (2022–)</li>
+        <li>SPRINT Research Group (2020–)</li>
+      </ul>
+
+      <h3>Referee Assignments</h3>
+      <ul>
+        <li>Reviewer, AMLAP Conference (2023–)</li>
+        <li>Editorial team, TransActions journal (2022–2023)</li>
+        <li>Ad hoc reviewer, Humanities and Social Sciences Communications (2022–)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <table class="skills-table" role="table" aria-label="Skills by category">
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Details</th>
+        </tr>
+        <tr>
+          <td><strong>Technical</strong></td>
+          <td>Python, R, Git, SPM, FreeSurfer, FieldTrip, FSL</td>
+        </tr>
+        <tr>
+          <td><strong>Analytics</strong></td>
+          <td>Statistical modeling, machine learning</td>
+        </tr>
+        <tr>
+          <td><strong>Research</strong></td>
+          <td>Experimental design, pupillometry, fMRI, mixed-methods</td>
+        </tr>
+        <tr>
+          <td><strong>Collaboration</strong></td>
+          <td>Strong communicator, mentoring, supervision, cross-functional teamwork</td>
+        </tr>
+        <tr>
+          <td><strong>Languages</strong></td>
+          <td>English (fluent), Swedish (fluent), Polish (native), Hebrew (fluent), Spanish (intermediate)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="download-cv">
+      <a href="Aleksandra_Adler_CV_accessible.pdf"
+         download
+         aria-label="Download Aleksandra Adler's CV in PDF format (opens in a new tab)"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV (PDF)
+      </a>
+      <p class="visually-hidden">
+        Note: This link opens a PDF file. If you experience issues accessing it, please contact me for an alternative format.
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    &copy; 2025 Aleksandra Adler
+  </footer>
+</body>
+</html>
