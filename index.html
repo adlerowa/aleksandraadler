@@ -19,14 +19,16 @@
       padding: 2rem;
       text-align: center;
     }
-    header img {
-      border-radius: 50%;
-      width: 30%;       /* or try 20–40% depending on how large you want it */
-      max-width: 250px; /* prevents it from becoming *too* big on large screens */
-      height: auto;     /* keeps proportions correct */
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
+  header img {
+    width: 180px;          /* dowolny rozmiar */
+    aspect-ratio: 1 / 1;   /* gwarantuje kwadrat */
+    border-radius: 50%;    /* zamienia w koło */
+    object-fit: cover;     /* kadruje bez rozciągania */
+    display: block;
+    margin: 0 auto 1rem;
+    /* opcjonalnie delikatny cień, żeby nie wyglądało “nagrobkowo” */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
 
     header h1 {
       margin-bottom: 0.25rem;
